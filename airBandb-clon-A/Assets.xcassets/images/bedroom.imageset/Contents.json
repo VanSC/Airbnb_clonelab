@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "bed-room.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

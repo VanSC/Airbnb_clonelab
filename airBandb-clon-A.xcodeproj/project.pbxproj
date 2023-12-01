@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0A1C3D2B1A5DB800183119 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A1C3C2B1A5DB800183119 /* Places.swift */; };
+		AA0A1C3F2B1A604000183119 /* contentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A1C3E2B1A604000183119 /* contentViewModel.swift */; };
 		AA19775F2AF5719100132982 /* airBandb_clon_AApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19775E2AF5719100132982 /* airBandb_clon_AApp.swift */; };
 		AA1977612AF5719100132982 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1977602AF5719100132982 /* ContentView.swift */; };
 		AA1977632AF5719200132982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1977622AF5719200132982 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA0A1C3C2B1A5DB800183119 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		AA0A1C3E2B1A604000183119 /* contentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentViewModel.swift; sourceTree = "<group>"; };
 		AA19775B2AF5719100132982 /* airBandb-clon-A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "airBandb-clon-A.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA19775E2AF5719100132982 /* airBandb_clon_AApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airBandb_clon_AApp.swift; sourceTree = "<group>"; };
 		AA1977602AF5719100132982 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA0A1C392B1A596000183119 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A1C3C2B1A5DB800183119 /* Places.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		AA1977522AF5719100132982 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +103,7 @@
 		AA19775D2AF5719100132982 /* airBandb-clon-A */ = {
 			isa = PBXGroup;
 			children = (
+				AA0A1C392B1A596000183119 /* models */,
 				AA5DCB072B1130A700259CDC /* GoogleService-Info.plist */,
 				AA5DCB052B1128DC00259CDC /* AppState.swift */,
 				AA19775E2AF5719100132982 /* airBandb_clon_AApp.swift */,
@@ -136,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				AA5DCB0D2B11374A00259CDC /* LoginViewModel.swift */,
+				AA0A1C3E2B1A604000183119 /* contentViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -238,7 +252,9 @@
 			files = (
 				AA886BE82AFEB47E00BF2267 /* TapItem.swift in Sources */,
 				AA886BE22AFEAF5F00BF2267 /* TripsView.swift in Sources */,
+				AA0A1C3F2B1A604000183119 /* contentViewModel.swift in Sources */,
 				AA5DCB002B110E2900259CDC /* Imagescarrousel.swift in Sources */,
+				AA0A1C3D2B1A5DB800183119 /* Places.swift in Sources */,
 				AA5DCB0B2B11343400259CDC /* AppDelegate.swift in Sources */,
 				AA5DCB0E2B11374A00259CDC /* LoginViewModel.swift in Sources */,
 				AA886BE62AFEAF7200BF2267 /* ProfileView.swift in Sources */,

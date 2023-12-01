@@ -16,5 +16,5 @@ class AppState: ObservableObject {
         case main
     }
     
-    @Published var currentscreen: Views = .login
+    @Published var currentscreen: Views = .main
 }

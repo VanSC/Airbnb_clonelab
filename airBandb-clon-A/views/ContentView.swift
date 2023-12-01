@@ -11,6 +11,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var contentViewModel = ContentViewModel()
+
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
@@ -24,16 +26,21 @@ struct ContentView: View {
             }
             .padding()
             Divider()
-            List {
-                Card()
-                Card()
-                Card()
+            List(contentViewModel.airbnbs.places, id: \.name) { place in
+                VStack {
+                    Card(image: place.image_url, name: place.name, rating: place.rating, date: place.date, price: place.price)
+                }
+                
+            }.task {
+                await contentViewModel.loadData()
             }
-            .listStyle(.inset)
-            .listRowSeparator(.hidden)
-            .padding([.trailing, .leading])
+             .listStyle(.inset)
+             .scrollIndicators(.hidden)
+             .padding([.trailing, .leading])
             Spacer()
-        }    }
+        }
+        
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

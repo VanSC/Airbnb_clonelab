@@ -8,36 +8,43 @@
 import SwiftUI
 
 struct Card: View {
-    var body: some View {
+    var image: String
+    var name: String
+    var rating: Double
+    var date: String
+    var price: Double    var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Image("item1")
+            AsyncImage(url: URL(string: image) )
                 .frame(width: 342, height: 323)
                 .cornerRadius(12.0)
             
             HStack {
-                Text("Haringen NetherLands")
+                Text(name)
+                    .fontWeight(.bold)
+                Text("Cusco")
                     .fontWeight(.bold)
                 Spacer()
                 HStack {
                     Image(systemName: "star.fill")
-                    Text("4.5")
+                    Text(String(rating))
                 }
             }
             Text("Professional Host")
                 .fontWeight(.light)
                 .foregroundColor(.gray)
-            Text("18-23 Dec")
+            Text(date)
                 .fontWeight(.light)
                 .foregroundColor(.gray)
-            Text("$1,065 total")
+            Text("$ \(String(price))")
                 .fontWeight(.semibold)
         }
         .padding()
+        
     }
 }
 
 struct Card_Previews: PreviewProvider {
     static var previews: some View {
-        Card()
+        Card(image: "item1", name: "Cusco", rating: 5, date: "12-12-11", price: 54)
     }
 }

@@ -33,6 +33,7 @@
 		AA886BE42AFEAF6700BF2267 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA886BE32AFEAF6700BF2267 /* InboxView.swift */; };
 		AA886BE62AFEAF7200BF2267 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA886BE52AFEAF7200BF2267 /* ProfileView.swift */; };
 		AA886BE82AFEB47E00BF2267 /* TapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA886BE72AFEB47E00BF2267 /* TapItem.swift */; };
+		AAD432572B2CE0D50022609D /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD432562B2CE0D50022609D /* TripViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		AA886BE32AFEAF6700BF2267 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		AA886BE52AFEAF7200BF2267 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AA886BE72AFEB47E00BF2267 /* TapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapItem.swift; sourceTree = "<group>"; };
+		AAD432562B2CE0D50022609D /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				AA5DCB0D2B11374A00259CDC /* LoginViewModel.swift */,
 				AA0A1C3E2B1A604000183119 /* contentViewModel.swift */,
+				AAD432562B2CE0D50022609D /* TripViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				AA5DCAFE2B10EFD900259CDC /* Tripsbook.swift in Sources */,
 				AA1977612AF5719100132982 /* ContentView.swift in Sources */,
 				AA886BE02AFEAF5500BF2267 /* WishlistView.swift in Sources */,
+				AAD432572B2CE0D50022609D /* TripViewModel.swift in Sources */,
 				AA19775F2AF5719100132982 /* airBandb_clon_AApp.swift in Sources */,
 				AA1977712AF580C800132982 /* Category.swift in Sources */,
 				AA5DCB062B1128DC00259CDC /* AppState.swift in Sources */,

@@ -12,10 +12,11 @@ struct Card: View {
     var name: String
     var rating: Double
     var date: String
-    var price: Double    var body: some View {
+    var price: Double
+    var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             AsyncImage(url: URL(string: image) )
-                .frame(width: 342, height: 323)
+                .frame(width: 365, height: 323)
                 .cornerRadius(12.0)
             
             HStack {

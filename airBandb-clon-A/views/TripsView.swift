@@ -8,16 +8,19 @@
 import SwiftUI
 import MapKit
 struct TripsView: View {
+    
     @State private var region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: -12.04552, longitude: -76.95265),
-            span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
-        )
-
-        
-        var body: some View {
-            ZStack {
-                Map(coordinateRegion: $region)
-                    .ignoresSafeArea()
+        center: CLLocationCoordinate2D(latitude: -12.04552, longitude: -76.95265),
+        span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+    )
+    @StateObject var tripViewModel = TripViewModel()
+    
+    var body: some View {
+        ZStack {
+            Map(coordinateRegion: $region, annotationItems: tripViewModel.annotations) {
+                MapPin(coordinate: $0.coordinate)
+                    
+            }.ignoresSafeArea()
                 VStack {
                     Spacer()
                     HStack {
@@ -51,12 +54,12 @@ struct TripsView: View {
                                 Spacer()
                                 HStack{
                                     Image(systemName: "star.fill")
-                                                .resizable()
-                                                .frame(width: 10, height: 10)
+                                        .resizable()
+                                        .frame(width: 10, height: 10)
                                     Text("4.91")
-                                                .font(.caption)
-                                                    }
+                                        .font(.caption)
                                 }
+                            }
                         }
                         .padding(.vertical, 8)
                         .frame(maxHeight: 120)
@@ -68,7 +71,10 @@ struct TripsView: View {
                 .padding()
             }
         }
-}
+    }
+
+    
+   
 
 struct TripsView_Previews: PreviewProvider {
     static var previews: some View {
